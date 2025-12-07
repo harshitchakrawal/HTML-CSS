@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+nav {
+    background: #1b1b1b;
+    height: 70px;              
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;       
+    z-index: 1000;             
+}
+
+nav .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.menu ul {
+    display: flex;
+    gap:30px;
+    padding-right:40px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    font-size: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.img {
+    background: url('imgcard/nav.jpg') no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.img::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+}
+.center{
+    position:absolute;
+    top:52%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding: 0 20px;
+    text-align:center;
+
+}
+.center .title {
+    color:#fff;
+    font-size:60px;
+    font-weight:600px;
+}
+.center .sub_title {
+    color:#fff;
+    font-size:55px;
+    font-weight:600px;
+}
+.center .btns{
+    margin-top:20px;
+}
+.center .btns button{
+    height:50px;
+    width:160px;
+    border-radius:5px;
+    border:none;
+    margin: 0 10px;
+    border:2px solid #fff;
+    font-size:20px;
+    font-weight: 500;
+    padding:0 10px;
+    cursor:pointer;
+    outline:none;
+    transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+    color:#fff;
+    background:none;
+}
+.center .btns button:first-child:hover{
+    background:#fff;
+    color:#000;
+}
